@@ -15,7 +15,7 @@ Vagrant.configure('2') do |config|
       :rax_mysql_tunables => {
         :config_options => {
           :mysqld => {
-            "innodb-buffer-pool-size" => 128
+            "innodb-buffer-pool-size" => 128000000
           }
         }
       }

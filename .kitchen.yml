@@ -7,6 +7,9 @@ provisioner:
 
 platforms:
   - name: ubuntu-12.04
+    run_list:
+      - recipe[apt::default]
+      - recipe[build-essential::default]
 
 suites:
   - name: default
